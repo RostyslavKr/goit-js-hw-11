@@ -1,0 +1,60 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    display: block;
+}
+.search-form{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6600ff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.input{
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    
+}
+
+.gallery{
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+}
+
+.info{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    border: solid 1px gray;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 349px;
+    
+}
+
+
+.load-more{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+.not-visible {
+    visibility: hidden;
+}
+
+
+
+
+
+
