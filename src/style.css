@@ -49,7 +49,7 @@ img{
     margin-left: auto;
     margin-top: 10px;
 }
-.not-visible {
+.is-visible {
     visibility: hidden;
 }
 

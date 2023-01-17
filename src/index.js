@@ -31,7 +31,7 @@ async function onSearch(e) {
     }
     Notiflix.Notify.success(`Hooray! We found ${data.totalHits} images.`);
     createMarkUp(data.hits);
-    refs.loadMoreBtn.classList.remove('not-visible');
+    refs.loadMoreBtn.classList.remove('is-visible');
   });
 }
 
@@ -70,7 +70,7 @@ function createMarkUp(pictures) {
     lightbox.refresh();
     return pictures;
   } else {
-    refs.loadMoreBtn.classList.remove('not-visible');
+    refs.loadMoreBtn.classList.remove('is-visible');
   }
   lightbox.refresh();
   return pictures;
@@ -80,7 +80,7 @@ async function onLoadMore() {
   await pictureApiService.fetchPictures().then(data => {
     const total = data.totalHits / 40;
     if (pictureApiService.page >= total) {
-      refs.loadMoreBtn.classList.add('not-visible');
+      refs.loadMoreBtn.classList.add('is-visible');
       return Notiflix.Notify.failure(
         "We're sorry, but you've reached the end of search results."
       );
